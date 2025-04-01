@@ -10,4 +10,4 @@ if [ "$#" -eq 0 ]; then
 fi
 
 # Run the main program with provided arguments
-python3 gt_main_wrapper.py "$1"
+python3 gt_main_wrapper.py "$@"
