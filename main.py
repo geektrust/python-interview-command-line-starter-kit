@@ -8,27 +8,17 @@ class Main:
 
         Main.handle() will be called in a loop for each command input.
 
-        For example: If the inputs are:
-          "PLACE_ORDER 101 Apple 5"
-          "PLACE_ORDER 101 Orange 5"
-          "TOTAL_COST 101"
-
-        Main.handle is called thrice as follows respectively:
-
-          Main.handle("PLACE_ORDER 101 Apple 5")
-          Main.handle("PLACE_ORDER 101 Orange 5")
-          Main.handle("TOTAL_COST 101")
         """
         inputs_for_one_command = input_str.strip().split(" ")
         command = inputs_for_one_command[
             0
         ]  # This value holds the command name each time it is called.
-        print(command)  # Will print the command Ex: "PLACE_ORDER" or "TOTAL_COST"
+        print(command) 
 
         if len(inputs_for_one_command) > 1:
             arg1 = inputs_for_one_command[
                 1
             ]  # This value holds the first argument value.
-            print(arg1)  # Will print the first argument to the command Ex: "101"
+            print(arg1)
 
         # TODO: Implement logic to handle each command here and print the respective output
